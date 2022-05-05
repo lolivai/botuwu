@@ -40,6 +40,5 @@ Bienvenido al bot de descarga 7.1.0
 /adduser ✳️Permite acceso a un usuario
 /addadmin ✳️Poner de admin a un usuario
 /banuser 🚫Ban vete la tu casa chaval
-/getdb 🗂Obtener base de datos
 
 ✳️Contactar con el admin en caso de problemas✳️
