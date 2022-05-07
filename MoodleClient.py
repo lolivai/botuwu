@@ -507,9 +507,9 @@ class MoodleClient(object):
             progrescall = CallingUpload(progressfunc,file,args)
             callback = partial(progrescall)
             monitor = MultipartEncoderMonitor(encoder,callback=callback)
-            resp2 = self.session.post(post_file_url,data=monitor,headers={"Content-Type": "multipart/form-data; boundary="+b},proxies=self.proxy)
+            resp2 = self.session.post(post_file_url,data=monitor,headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0'},proxies=self.proxy)
             of.close()
-            
+           
             data = self.parsejson(resp2.text)
             data['url'] = str(data['url']).replace('\\','')
             if self.userdata:
