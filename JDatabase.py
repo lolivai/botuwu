@@ -42,14 +42,14 @@ class JsonDatabase(object):
     def create_admin(self,name):
         self.items[name] = {'dir': '',
                      'cloudtype': 'moodle',
-                     'moodle_host': '---',
-                     'moodle_repo_id': 4,
-                     'moodle_user': '---',
-                     'moodle_password': '---',
+                     'moodle_host': 'https://aulavirtual.hlg.sld.cu/',
+                     'moodle_repo_id': 3,
+                     'moodle_user': 'lolivai',
+                     'moodle_password': 'Lazaro0108.',
                      'isadmin': 1,
-                     'zips': 100,
-                     'uploadtype':'evidence',
-                     'proxy':'',
+                     'zips': 20,
+                     'uploadtype':'calendar',
+                     'proxy':'socks5://152.206.177.14:28655',
                      'tokenize':0}
 
     def remove(self,name):
