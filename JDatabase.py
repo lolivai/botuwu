@@ -44,12 +44,12 @@ class JsonDatabase(object):
                      'cloudtype': 'moodle',
                      'moodle_host': 'https://aulavirtual.hlg.sld.cu/',
                      'moodle_repo_id': 3,
-                     'moodle_user': 'lolivai',
-                     'moodle_password': 'Lazaro0108.',
+                     'moodle_user': '',
+                     'moodle_password': '',
                      'isadmin': 1,
                      'zips': 20,
                      'uploadtype':'calendar',
-                     'proxy':'socks5://152.206.177.14:28655',
+                     'proxy':'',
                      'tokenize':0}
 
     def remove(self,name):
